@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Emerald Clicker Chat</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="left">
+      <h3>Game</h3>
+      <div id="playerInfo">
+        <div id="avatarPreview" class="avatar big">?</div>
+        <div>
+          <div><strong id="nickDisplay">Guest</strong></div>
+          <div>Emeralds: <strong id="emeraldCount">0</strong></div>
+          <div>Power: <strong id="powerCount">1</strong></div>
+        </div>
+      </div>
+      <button id="clickBtn" class="big">押す</button>
+
+      <h4>Shop</h4>
+      <div id="shopList"></div>
+    </div>
+
+    <div class="right">
+      <h3>Chat</h3>
+      <div id="chatBox" class="chatBox"></div>
+
+      <div class="chatControls">
+        <input id="nameInput" placeholder="Nickname (unique)" />
+        <input id="avatarFile" type="file" accept="image/*" />
+        <button id="uploadBtn">Upload Icon</button>
+        <button id="registerBtn">Register</button>
+        <br/>
+        <input id="adminPass" type="password" placeholder="Admin pass to enable commands" />
+        <button id="adminLogin">Admin Login</button>
+      </div>
+
+      <div class="sendRow">
+        <input id="chatInput" placeholder="Type a message" />
+        <button id="sendBtn">Send</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="/app.js"></script>
+</body>
+</html>
