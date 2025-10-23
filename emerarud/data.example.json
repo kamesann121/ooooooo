@@ -1,0 +1,9 @@
+{
+  "users": {},
+  "bans": {},
+  "globalShop": {
+    "sword": { "price": 50, "power": 1 },
+    "armor": { "price": 100, "power": 2 },
+    "gemBooster": { "price": 250, "power": 5 }
+  }
+}
